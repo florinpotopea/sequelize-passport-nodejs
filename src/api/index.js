@@ -1,7 +1,8 @@
 import { Router } from 'express'
-import router from './user'
 import user from './user'
 import auth from './auth'
+
+const router = new Router()
 
 router.use('/users', user)
 router.use('/auth', auth)
